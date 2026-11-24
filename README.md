@@ -21,12 +21,18 @@ real logs instead of writing XML by hand.
 ## Install
 
 ```bash
-git clone <this-repo>
+git clone https://github.com/NihadDjafaroff/sigma2wazuh.git
 cd sigma2wazuh
 pip install -r requirements.txt
 ```
 
 No packaging/installation step is required beyond PyYAML — run it as a module.
+
+To run the test suite, install the dev dependencies as well:
+```bash
+pip install -r requirements-dev.txt
+python3 -m pytest tests/ -v
+```
 
 ## Usage
 
